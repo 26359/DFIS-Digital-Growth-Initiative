@@ -1,0 +1,10 @@
+# DFIS Website Robots.txt
+
+User-agent: *
+Allow: /
+
+Sitemap: https://dfis.com/sitemap.xml
+
+# Disallow access to any future admin or private paths
+# Disallow: /admin/
+# Disallow: /private/

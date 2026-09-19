@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="DFIS Coverage Compass — A free interactive tool to understand your insurance coverage, identify areas to review, and connect with a licensed professional.">
+  <meta name="keywords" content="coverage compass, insurance checkup, coverage checklist, DFIS, insurance education">
+  <meta name="author" content="DFIS — Daher Financial Insurance Services">
+  <meta property="og:title" content="DFIS Coverage Compass — Free Coverage Checkup">
+  <meta property="og:description" content="Understand your coverage. Identify what to review. Connect with the right professional.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dfis.com/coverage-compass">
+  <link rel="canonical" href="https://dfis.com/coverage-compass">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <title>DFIS Coverage Compass — Free Coverage Checkup</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "DFIS Coverage Compass",
+    "description": "A free interactive tool to understand your insurance coverage, identify areas to review, and connect with a licensed professional.",
+    "url": "https://dfis.com/coverage-compass",
+    "applicationCategory": "Insurance Tool",
+    "operatingSystem": "Web"
+  }
+  </script>
+</head>
+<body>
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Header -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="DFIS Home">
+        <span class="logo-mark" aria-hidden="true">DF</span>
+        <span>DFIS</span>
+      </a>
+      <nav class="nav-desktop" aria-label="Main navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="coverage-compass.html" aria-current="page">Coverage Compass</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="coverage-compass.html" class="btn btn-primary">Start Coverage Checkup</a>
+        </div>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="mobile-nav">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <nav class="nav-mobile" id="mobile-nav" aria-label="Mobile navigation" hidden>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coverage-compass.html">Coverage Compass</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="coverage-compass.html" class="btn btn-primary">Start Coverage Checkup</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main id="main-content">
+
+    <!-- Page Header -->
+    <section class="section-sm" style="background-color: var(--color-surface-alt); border-bottom: 1px solid var(--color-border-light);" aria-labelledby="compass-heading">
+      <div class="container text-center">
+        <h1 id="compass-heading">Coverage Compass&#8482;</h1>
+        <p class="lead">Understand your coverage. Identify what to review. Connect with the right professional.</p>
+      </div>
+    </section>
+
+    <!-- Coverage Compass Tool -->
+    <section class="section" aria-labelledby="compass-tool-heading">
+      <div class="container">
+        <div class="compass-container">
+
+          <!-- Progress Indicator -->
+          <div class="compass-progress" id="compass-progress" role="navigation" aria-label="Coverage Compass progress">
+            <div class="compass-step-indicator">
+              <div class="step-dot active" id="step-dot-1" aria-label="Step 1: Assessment">1</div>
+              <div class="step-line" id="step-line-1"></div>
+              <div class="step-dot" id="step-dot-2" aria-label="Step 2: Checklist">2</div>
+              <div class="step-line" id="step-line-2"></div>
+              <div class="step-dot" id="step-dot-3" aria-label="Step 3: AI Q&amp;A">3</div>
+              <div class="step-line" id="step-line-3"></div>
+              <div class="step-dot" id="step-dot-4" aria-label="Step 4: Connect">4</div>
+            </div>
+          </div>
+
+          <!-- Step 1: Assessment -->
+          <div class="compass-panel" id="compass-step-1" role="region" aria-labelledby="step1-heading">
+            <h2 id="step1-heading">Tell Us About Yourself</h2>
+            <p class="panel-subtitle">Answer a few simple questions. This takes about 2 minutes.</p>
+
+            <form id="assessment-form" novalidate>
+              <div class="compass-question" data-step="1">
+                <h3>1. Who is this for?</h3>
+                <div class="compass-options" role="radiogroup" aria-label="Who is this coverage checkup for?">
+                  <div class="compass-option">
+                    <input type="radio" name="scope" id="scope-individual" value="individual">
+                    <label for="scope-individual">Individual</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="scope" id="scope-family" value="family">
+                    <label for="scope-family">Family</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="scope" id="scope-business" value="business">
+                    <label for="scope-business">Business</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>2. Property Status</h3>
+                <div class="compass-options" role="radiogroup" aria-label="What is your property status?">
+                  <div class="compass-option">
+                    <input type="radio" name="property" id="property-homeowner" value="homeowner">
+                    <label for="property-homeowner">Homeowner</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="property" id="property-renter" value="renter">
+                    <label for="property-renter">Renter</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="property" id="property-none" value="none">
+                    <label for="property-none">Neither</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>3. Vehicle Ownership</h3>
+                <div class="compass-options" role="radiogroup" aria-label="Do you own a vehicle?">
+                  <div class="compass-option">
+                    <input type="radio" name="vehicle" id="vehicle-yes" value="yes">
+                    <label for="vehicle-yes">Yes</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="vehicle" id="vehicle-no" value="no">
+                    <label for="vehicle-no">No</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>4. Current Insurance Status</h3>
+                <div class="compass-options" role="radiogroup" aria-label="What is your current insurance status?">
+                  <div class="compass-option">
+                    <input type="radio" name="current" id="current-covered" value="covered">
+                    <label for="current-covered">Currently insured</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="current" id="current-shopping" value="shopping">
+                    <label for="current-shopping">Shopping for coverage</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="current" id="current-uninsured" value="uninsured">
+                    <label for="current-uninsured">Uninsured</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>5. Major Financial Priorities</h3>
+                <div class="compass-options" role="group" aria-label="What are your major financial priorities?">
+                  <div class="compass-option">
+                    <input type="checkbox" name="priority" id="priority-protection" value="protection">
+                    <label for="priority-protection">Protection</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="checkbox" name="priority" id="priority-savings" value="savings">
+                    <label for="priority-savings">Savings</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="checkbox" name="priority" id="priority-retirement" value="retirement">
+                    <label for="priority-retirement">Retirement</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="checkbox" name="priority" id="priority-education" value="education">
+                    <label for="priority-education">Education funding</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>6. Life Stage</h3>
+                <div class="compass-options" role="radiogroup" aria-label="What is your life stage?">
+                  <div class="compass-option">
+                    <input type="radio" name="lifestage" id="stage-young" value="young">
+                    <label for="stage-young">Young Professional</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="lifestage" id="stage-family" value="family">
+                    <label for="stage-family">Starting a Family</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="lifestage" id="stage-established" value="established">
+                    <label for="stage-established">Established</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="lifestage" id="stage-retirement" value="retirement">
+                    <label for="stage-retirement">Pre-Retirement</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-question" data-step="1">
+                <h3>7. Preferred Contact Method</h3>
+                <div class="compass-options" role="radiogroup" aria-label="How would you like to be contacted?">
+                  <div class="compass-option">
+                    <input type="radio" name="contact" id="contact-phone" value="phone">
+                    <label for="contact-phone">Phone</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="contact" id="contact-email" value="email">
+                    <label for="contact-email">Email</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="contact" id="contact-text" value="text">
+                    <label for="contact-text">Text</label>
+                  </div>
+                  <div class="compass-option">
+                    <input type="radio" name="contact" id="contact-book" value="book">
+                    <label for="contact-book">Book Online</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="compass-nav">
+                <span></span>
+                <button type="button" class="btn btn-primary" id="btn-step1-next">Continue &#8594;</button>
+              </div>
+            </form>
+          </div>
+
+          <!-- Step 2: Checklist Results -->
+          <div class="checklist-results hidden" id="compass-step-2" role="region" aria-labelledby="step2-heading">
+            <h2 id="step2-heading">Your DFIS Coverage Checkup</h2>
+            <p class="results-intro">Areas you may want to review based on your answers. This is educational — not a policy recommendation.</p>
+
+            <div id="checklist-content">
+              <!-- Dynamically populated -->
+            </div>
+
+            <div class="compass-nav">
+              <button type="button" class="btn btn-outline" id="btn-step2-back">&#8592; Back</button>
+              <button type="button" class="btn btn-primary" id="btn-step2-next">Continue to AI Q&amp;A &#8594;</button>
+            </div>
+          </div>
+
+          <!-- Step 3: AI Q&A -->
+          <div class="hidden" id="compass-step-3" role="region" aria-labelledby="step3-heading">
+            <div class="ai-qa-container">
+              <div class="ai-qa-header">
+                <div class="ai-icon" aria-hidden="true">&#129302;</div>
+                <div>
+                  <h3 id="step3-heading">AI Education Assistant</h3>
+                  <p>Ask any insurance question in plain English</p>
+                </div>
+              </div>
+              <div class="ai-qa-compliance-banner" role="alert" aria-live="polite">
+                <span aria-hidden="true">&#9432;</span>
+                <span><strong>Important:</strong> This AI assistant provides educational information only. It does not provide quotes, bind coverage, or offer policy interpretations. It is not a substitute for personalized advice from a licensed DFIS agent.</span>
+              </div>
+              <div class="ai-qa-disclaimer" role="note">
+                <span aria-hidden="true">&#9432;</span>
+                <span>Coverage Compass AI provides educational information only. It is not a substitute for personalized insurance advice. A DFIS agent can help you understand what coverage is right for your situation.</span>
+              </div>
+              <div class="ai-qa-messages" id="ai-messages" aria-live="polite" aria-label="AI conversation">
+                <div class="ai-message bot">
+                  <div>
+                    <div class="message-sender">DFIS Assistant</div>
+                    <div class="message-bubble">Hello! I'm your DFIS educational assistant. I can help explain insurance concepts in plain English. What would you like to know about?<div class="ai-compliance-footer" style="margin-top: 8px; padding-top: 8px; border-top: 1px solid rgba(0,0,0,0.1); font-size: 0.8em; opacity: 0.8;">This is educational information only. It is not a quote, not a policy recommendation, and not a substitute for personalized insurance advice. For coverage that fits your specific situation, connect with a licensed DFIS agent.</div></div>
+                  </div>
+                </div>
+              </div>
+              <div class="ai-suggested-questions" id="ai-suggested">
+                <button class="suggested-question" data-question="What is auto insurance?">What is auto insurance?</button>
+                <button class="suggested-question" data-question="Do I need life insurance?">Do I need life insurance?</button>
+                <button class="suggested-question" data-question="What does homeowners insurance cover?">What does homeowners insurance cover?</button>
+                <button class="suggested-question" data-question="What is a deductible?">What is a deductible?</button>
+              </div>
+              <div class="ai-input-area">
+                <label for="ai-input" class="sr-only">Ask an insurance question</label>
+                <input type="text" id="ai-input" class="ai-input" placeholder="Ask your insurance question..." autocomplete="off">
+                <button type="button" class="ai-send-btn" id="ai-send-btn" aria-label="Send question">Send</button>
+              </div>
+            </div>
+            <div class="compass-nav">
+              <button type="button" class="btn btn-outline" id="btn-step3-back">&#8592; Back to Checklist</button>
+              <button type="button" class="btn btn-primary" id="btn-step3-next">Ready to Connect &#8594;</button>
+            </div>
+          </div>
+
+          <!-- Step 4: Lead Capture / Handoff -->
+          <div class="hidden" id="compass-step-4" role="region" aria-labelledby="step4-heading">
+            <div class="handoff-section">
+              <h2 id="step4-heading">Want to Review Your Situation with a DFIS Professional?</h2>
+              <p>Your answers and checklist are ready to share with an agent. Choose how you'd like to connect:</p>
+
+              <div class="handoff-options">
+                <a href="contact.html?booking=true" class="handoff-card" id="handoff-book">
+                  <div class="handoff-icon" aria-hidden="true">&#128197;</div>
+                  <h3>Book an Appointment</h3>
+                  <p>Schedule a time that works for you</p>
+                </a>
+                <a href="contact.html?callback=true" class="handoff-card" id="handoff-callback">
+                  <div class="handoff-icon" aria-hidden="true">&#128222;</div>
+                  <h3>Request a Callback</h3>
+                  <p>We'll call you at your preferred time</p>
+                </a>
+                <a href="contact.html?submit=true" class="handoff-card" id="handoff-submit">
+                  <div class="handoff-icon" aria-hidden="true">&#128221;</div>
+                  <h3>Submit Your Information</h3>
+                  <p>We'll reach out to you</p>
+                </a>
+              </div>
+
+              <div class="mt-12">
+                <h3 class="mb-4">Or fill in your details below</h3>
+                <div class="lead-form" id="lead-form-container">
+                  <h3>Your Information</h3>
+                  <p class="form-subtitle">So your agent can prepare for your conversation.</p>
+                  <form id="lead-form" novalidate>
+                    <div class="form-group">
+                      <label for="lead-name">Full Name <span class="required" aria-label="required">*</span></label>
+                      <input type="text" id="lead-name" name="name" class="form-control" required autocomplete="name">
+                      <div class="error-message" id="lead-name-error">Please enter your full name.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lead-email">Email Address <span class="required" aria-label="required">*</span></label>
+                      <input type="email" id="lead-email" name="email" class="form-control" required autocomplete="email">
+                      <div class="error-message" id="lead-email-error">Please enter a valid email address.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lead-phone">Phone Number <span class="required" aria-label="required">*</span></label>
+                      <input type="tel" id="lead-phone" name="phone" class="form-control" required autocomplete="tel">
+                      <div class="error-message" id="lead-phone-error">Please enter a valid phone number.</div>
+                    </div>
+                    <div class="form-group">
+                      <label for="lead-preferred">Preferred Contact Method</label>
+                      <select id="lead-preferred" name="preferred_contact" class="form-control">
+                        <option value="phone">Phone</option>
+                        <option value="email">Email</option>
+                        <option value="text">Text</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                      <label for="lead-message">Additional Notes (Optional)</label>
+                      <textarea id="lead-message" name="message" class="form-control" rows="3" placeholder="Anything else you'd like the agent to know?"></textarea>
+                    </div>
+                    <input type="hidden" id="lead-assessment" name="assessment_data">
+                    <input type="hidden" id="lead-checklist" name="checklist_data">
+                    <input type="hidden" id="lead-questions" name="questions_data">
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">Submit &amp; Connect with an Agent</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo" aria-label="DFIS Home">
+            <span class="logo-mark" aria-hidden="true">DF</span>
+            <span>DFIS</span>
+          </a>
+          <p>Daher Financial Insurance Services — Protecting what matters most with personalized, educational insurance guidance.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="coverage-compass.html">Auto Insurance</a></li>
+            <li><a href="coverage-compass.html">Home Insurance</a></li>
+            <li><a href="coverage-compass.html">Life Insurance</a></li>
+            <li><a href="coverage-compass.html">Business Insurance</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="coverage-compass.html">Coverage Compass</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Licensing</a></li>
+            <li><a href="#">Disclosures</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 DFIS — Daher Financial Insurance Services. All rights reserved.</p>
+        <p>This site provides educational information only. It does not provide personalized insurance advice, quotes, or binding coverage.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/coverage-compass.js"></script>
+  <script src="js/ai-qa.js"></script>
+</body>
+</html>
